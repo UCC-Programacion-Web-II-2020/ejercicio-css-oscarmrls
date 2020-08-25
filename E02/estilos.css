@@ -10,8 +10,13 @@ img{ border:0; }
 /*Texto alineado al centro*/
 .center{ text-align:center; }
 
-h1{	font-size: 2.0em; }
-h2{	font-size: 1.5em; }
+h1{	font-size: 2.0em;
+	text-align:center;
+}
+
+h2{	font-size: 1.5em;
+	text-decoration: underline;
+}
 
 
 /*Contenedor principal*/
@@ -19,6 +24,7 @@ h2{	font-size: 1.5em; }
 	margin: 0 auto;
 	max-width: 1024px;
 	border: 1px solid #000;
+	font-family: 'Noto Serif', serif;;
 }
 /*********************************/
 /*Encabezado*/
@@ -26,11 +32,11 @@ h2{	font-size: 1.5em; }
 /*Color en degradado creado en http://www.colorzilla.com/gradient-editor/ */
 	padding: 20px;
 	height:60px;
+	background-color: black;
 }
 
-#header h1 { 
-	margin: 0;
-	font-weight:300;	  
+#container h1,h2{
+	color: white;
 }
 /*********************************/
 /*Menú*/
@@ -38,6 +44,7 @@ h2{	font-size: 1.5em; }
 	float: left;
 	width: 100%;
 	border:1px solid #000
+	background-color: #BFB300;
 }
 
 #navigation ul {	
@@ -55,16 +62,40 @@ h2{	font-size: 1.5em; }
 	text-decoration: none;	
 }
 
-#navigation li a:hover { background:#FF0000; }
+#navigation li a:hover { background:#E5D700; }
 /*********************************/
 /*Contenido*/
 #content {
 	clear: left;
 	padding: 20px;
+	background-color: #FFEF00;
+}
+
+#content table{
+	text-align: center;
+	border-collapse: collapse;
+	margin-left: 35%;
+	margin-bottom: 3%;
+	color: white;
+	background-color: #403C00;
+}
+#content table th,td{
+	border: 2px solid black;
+	padding: 5px 10px;
+}
+fieldset {
+	background-color: #BFB300;
+}
+legend {
+	text-align: center;
+	background-color: #7F7700;
+	color: white;
+	border-style: groove;
+	padding: 5px 10px;
 }
 
 #content a { 
-	/* Color de los hipervinculos*/
+	color: black;
 }
 
 #content h1 {		
@@ -72,7 +103,8 @@ h2{	font-size: 1.5em; }
 }
 
 #content h1, #content h2 {
-	margin: 0 0 1em 0;	
+	margin: 0 0 1em 0;
+	text-transform: uppercase;
 }
 /*********************************/
 /*Pie*/
@@ -81,6 +113,7 @@ h2{	font-size: 1.5em; }
 	padding: 15px;
 	height: 150px;
 	border: 1px solid #000;
+	background-color: #E5D700;
 }
 
 #footer p { float:right; }

@@ -3,11 +3,70 @@
  /************************************************/
  /************************************************/
 /*Coloca a continuación tu solución*/
+ p{
+     text-transform: uppercase;
+ }
+ #lote1{
+     background-color: #ffefe4;
+ }
 
+ #casa1 .visita .hombre{
+     font-size: 22px;
+ }
 
+ #lote2{
+     background-color: #7cafb2;
+ }
 
+ #casa2 .familia{
+     text-align: right;
+ }
 
+ #casa2 .visita{
+     font-weight: bold;
+ }
 
+ #casa2 > p {
+     font-style: italic;
+ }
+
+ #casa2 .visita :last-child{
+     cursor: pointer;
+ }
+
+ #lote3{
+     background-color: #e4fdff;
+ }
+
+ #casa3 .familia .mujer{
+     letter-spacing: 10px;
+ }
+
+ #casa3 .familia :first-child{
+     transform: rotate(5deg);
+ }
+
+ h1{
+     color: #b29d8e;
+     text-align: center;
+     text-shadow: 2px 2px black;
+ }
+
+ .hombre{
+     color: #0000ff;
+ }
+
+ .mujer{
+     color: #ff66ff;
+ }
+
+ .familia{
+     text-decoration: underline;
+ }
+
+ .menor{
+     text-transform: capitalize;
+ }
 
  /************************************************/
  /************************************************/
